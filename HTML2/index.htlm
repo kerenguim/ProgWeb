@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Formulário de Contato</h1>
-    <div>
+    <form>
         <fieldset>
             <legend>Dados Básicos</legend>
             <label for="nome">Nome</label>
@@ -30,7 +30,7 @@
         <fieldset>
             <legend>Assinale as linguagens já usadas por você:</legend>
             <label for="java">Java</label>
-            <input type="checkbox" name="java" id="java">
+            <input type="checkbox" name="java" id="java">´
             <label for="c">C</label>
             <input type="checkbox" name="c" id="c">
             <label for="cpp">C++</label>
@@ -66,7 +66,7 @@
             </select>
         </fieldset>
         <fieldset>
-            <legend>Submeta seu curriculo vitae</legend>
+            <legend>Submeta seu currículo vitae</legend>
             <input type="file" name="arquivo" id="arquivo">
         </fieldset>
         <fieldset>
@@ -75,5 +75,9 @@
             </textarea>
         </fieldset>
     </div>
+    <div>
+        <input type="reset" value="Resetar Dados"/>
+        <input type="submit" value="Enviar Mensagem"/>
+    </form>
 </body>
 </html>
