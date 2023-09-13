@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+}
+
+.container2{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.azul{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: blue;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+}
+
+.vermelho{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    
+}
