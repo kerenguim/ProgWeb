@@ -1,0 +1,1 @@
+Em JavaScript "==" e "===" são usado quando queremos comparar dois objetos, a diferença entre eles é que "===" leva em consideração não apenas o "conteúdo" mas tambémo tipo, diferente de "==". 
