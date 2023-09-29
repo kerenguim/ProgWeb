@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jogo</title>
+</head>
+<body>
+  <script>
+    function jogarJokenpo() {
+      let pontuacao = 0;
+
+      while (true) {
+        const jogador = parseInt(prompt(
+          "Escolha sua jogada:\n1 - Papel\n2 - Pedra\n3 - Tesoura"
+        ));
+
+        if (isNaN(jogador) || jogador < 1 || jogador > 3) {
+          alert("Opção inválida. Você perdeu a rodada.");
+          break;
+        }
+
+        const opcoes = ["Papel", "Pedra", "Tesoura"];
+        const computador = Math.floor(Math.random() * 3) + 1;
+        const escolhaComputador = opcoes[computador - 1];
+
+        alert("O computador jogou " + escolhaComputador);
+
+        if (jogador === computador) {
+          alert("A rodada empatou!");
+        } else if (
+          (jogador === 1 && computador === 2) ||
+          (jogador === 2 && computador === 3) ||
+          (jogador === 3 && computador === 1)
+        ) {
+          alert("Você ganhou!");
+          pontuacao++;
+        } else {
+          alert("Você perdeu! A pontuação foi de " + pontuacao);
+          break;
+        }
+      }
+
+      alert("Jogo acabou. Sua pontuação total: " + pontuacao);
+    }
+
+    // Iniciar o jogo quando a página carregar
+    jogarJokenpo();
+  </script>
+</body>
+</html>
